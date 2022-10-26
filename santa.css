@@ -1,0 +1,93 @@
+body{ background: black; display: grid;  justify-content: center; text-align: center; }
+h1{ color: greenyellow;}
+p{ color: teal; }
+p2{ color: white;}
+p3{ color:white;}
+label{ color:white;}
+.estrella{font-size: 100px; animation: colores 1s infinite;}
+.rojo{
+    color:red;
+    transition: all 1.5s;
+    font-size: 30px;
+}
+@keyframes colores {
+    0%{ color: red;}
+    33%{ color: green;}
+    66%{ color: red;}
+    100%{ color: yellow;}
+}
+.container{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    position: absolute;
+    top:40%;
+    left:60%;
+    width:50%;
+    transform: translate(-50%,-50%);
+    
+}
+
+.formulario{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    position: absolute;
+    top: -22%;
+    left: -32%;
+    transform: translate(-50%,-50%);
+}
+
+.audinav{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    position: absolute;
+    top:139%;
+    left:80%;
+    transform: translate(-50%,-50%); 
+}
+
+form{
+    width: 450px;
+    margin-top: left;
+    padding: 10px, 20px;
+    margin-top: 20px;
+    
+ }
+ 
+ h5{
+     color: white;
+     text-align: center;
+     margin: 0%;
+     font-size: 20px;
+     margin-bottom: 20px;
+     transform: translate(-115%,-2500%);
+ }
+ 
+ input{
+     width: 100%;
+     margin-bottom: 25px;
+     transform: translate(-115%,-2700%);
+ }
+
+ .magi{
+    font-size: 20px;
+    transform: translate(-123%,-1500%);
+ }
+
+ iframe{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    position: absolute;
+    top:139%;
+    left:80%;
+    transform: translate(-400%,-365%); 
+ }
+ textarea{
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100px;
+    transform: translate(-500%,-540%);
+ }

